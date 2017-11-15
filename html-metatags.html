@@ -1,20 +1,20 @@
-<!-- Proposed meta-tags system -->
+<!-- Proposed meta-tags system, with <meta> being after <head> -->
 <html>
     <head>
         <!-- <title>,<script>,<style>-->
     </head>
-    <meta>
-        <charset>UTF-8</charset>
-        <description>Description of the website</description>
-        <keywords>Keyword 1, keyword 2</keywords>
-        <author>Ismael Correa C.</author>
-        <viewport width="device-width" initial-scale="1.0">
-        <language>ES</language>
-        <url>http://www.example.com</url>
+    <meta> <!-- <meta> now is a category that contains all the meta-information of the webpage -->
+        <charset>UTF-8</charset> <!-- Instead of using <meta name="charset">, <charset> is a shorter option. The same with the content attribute, that now goes inside the body of <charset> -->
+        <description>Description of the website</description> <!-- Same change as for <charset> -->
+        <keywords>Keyword 1, keyword 2</keywords> <!-- Same change as for <charset> -->
+        <author>Ismael Correa C.</author> <!-- Same change as for <charset> -->
+        <viewport width="device-width" initial-scale="1.0"> <!-- Width and initial-scale now are attributes, instead of being both merged inside the attribute content -->
+        <language>ES</language> <!-- Same change as for <charset> -->
+        <url>http://www.example.com</url> <!-- Samge change as for <charset> -->
     </meta>
 </html>
 
-<!-- Another option for <meta> -->
+<!-- Another option for <meta>: to have it inside <head> as a category instead of having it after <head> -->
 <html>
     <head>
         <meta>
@@ -29,7 +29,7 @@
     </head>
 </html>
 
-<!-- Previous meta-tags system -->
+<!-- Actual meta-tags system of HTML5 given for comparison with the proposed system -->
 <html>
     <head>
         <meta charset="UTF-8">
